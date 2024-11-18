@@ -7,8 +7,8 @@ const ProjectNames =
     "api",
     "BF",
     "net",
-    "ST",
     "PP",
+    "ST",
     "vpa"
 ]
 
