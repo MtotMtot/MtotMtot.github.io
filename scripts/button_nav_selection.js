@@ -6,7 +6,8 @@ const ContentNames =
 [
     "projects",
     "career",
-    "skills"
+    "skills", 
+    "landing"
 ];
 
 const TextAreaMinHeightExtended = "200px";
@@ -58,6 +59,8 @@ document.addEventListener('DOMContentLoaded', function()
     {
 		buttons.push(document.getElementById(ContentNames[i] + "-Button")); /* Add all relevant buttons to array. */
     }
+
+
     
     /* Add event listener to buttons for click events */
     for (let i = 0; i < buttons.length; ++i) 
@@ -107,3 +110,7 @@ document.addEventListener('DOMContentLoaded', function()
 		});
 	}
 });
+
+document.body.style.height = "200vh";
+textArea.innerHTML = IncludeText[3];
+textArea.style.opacity = 1;
