@@ -108,9 +108,7 @@ document.addEventListener('DOMContentLoaded', function()
 				}, TransitionDuration);
 			}
 		});
-	}
-});
+    }
 
-document.body.style.height = "200vh";
-textArea.innerHTML = IncludeText[3];
-textArea.style.opacity = 1;
+    revealIncludeText("data_selection_area", 3);
+});
