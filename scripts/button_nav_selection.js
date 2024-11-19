@@ -103,12 +103,22 @@ document.addEventListener('DOMContentLoaded', function()
                     {
 						buttons[j].class = "kd-button";
 					}
-					textArea.innerHTML = "";
+                    // textArea.innerHTML = "";
+                    document.body.style.height = "200vh";
+                    fetch("./Data/pages/landing_extra.html")
+                        .then(r => r.text())  // Fetch and get the text content of the response
+                        .then(text => {  // Handle the text once it's fetched
+                            textArea.innerHTML = text;  // Set the inner HTML of the text area
+                            textArea.style.opacity = 1;  // Make the text area visible
+                        })
+                        .catch(error => {
+                            console.error("Error fetching data:", error);
+                        });
 					lastButtonIndex = -1;
                     setTimeout(function() 
                     {
-                        textArea.style.minHeight = TextAreaMinHeightClosed;
-                        textArea.style.opacity = 0;
+                        //textArea.style.minHeight = TextAreaMinHeightClosed;
+                        //textArea.style.opacity = 1;
 					}, TransitionDuration / 2);
 				}
 				buttonLock = true;
