@@ -409,6 +409,17 @@ letter.initial
 
 /* ---------------------------------------------------- */
 
+/****************** About Me section *********************/
+
+#about-me-more {
+    color: rgba(255, 255, 255, 255);
+    display: block;
+    text-align: center;
+    font-family: 'cascadia', 'monospace';
+}
+
+/* ----------------------------------------------------- */
+
 .chart_parent
 {
   border: 2px dotted white;
