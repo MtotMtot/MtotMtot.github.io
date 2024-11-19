@@ -6,8 +6,7 @@ const ContentNames =
 [
     "projects",
     "career",
-    "skills", 
-    "landing"
+    "skills"
 ];
 
 const TextAreaMinHeightExtended = "200px";
@@ -60,7 +59,18 @@ document.addEventListener('DOMContentLoaded', function()
 		buttons.push(document.getElementById(ContentNames[i] + "-Button")); /* Add all relevant buttons to array. */
     }
 
-
+    if (textArea.style.opacity == 0) {
+        document.body.style.height = "200vh";
+        fetch("./Data/pages/landing_extra.html")
+            .then(r => r.text())  // Fetch and get the text content of the response
+            .then(text => {  // Handle the text once it's fetched
+                textArea.innerHTML = text;  // Set the inner HTML of the text area
+                textArea.style.opacity = 1;  // Make the text area visible
+            })
+            .catch(error => {
+                console.error("Error fetching data:", error);
+            });
+    }
     
     /* Add event listener to buttons for click events */
     for (let i = 0; i < buttons.length; ++i) 
@@ -109,6 +119,4 @@ document.addEventListener('DOMContentLoaded', function()
 			}
 		});
     }
-
-    revealIncludeText("data_selection_area", 3);
 });
