@@ -5,7 +5,6 @@
 
 
 function LoadProject1() {
-    var currently = document.getElementById('info').getAttribute('style');
     var currently = document.getElementById('info1').getAttribute('style');
     if (currently != 'display:none') {
         document.getElementById('info1').setAttribute('style', 'display:none');
@@ -16,7 +15,6 @@ function LoadProject1() {
 }
 
 function LoadProject2() {
-    var currently = document.getElementById('info').getAttribute('style');
     var currently = document.getElementById('info2').getAttribute('style');
     if (currently != 'display:none') {
         document.getElementById('info2').setAttribute('style', 'display:none');
@@ -27,7 +25,6 @@ function LoadProject2() {
 }
 
 function LoadProject3() {
-    var currently = document.getElementById('info').getAttribute('style');
     var currently = document.getElementById('info3').getAttribute('style');
     if (currently != 'display:none') {
         document.getElementById('info3').setAttribute('style', 'display:none');
@@ -38,7 +35,6 @@ function LoadProject3() {
 }
 
 function LoadProject4() {
-    var currently = document.getElementById('info').getAttribute('style');
     var currently = document.getElementById('info4').getAttribute('style');
     if (currently != 'display:none') {
         document.getElementById('info4').setAttribute('style', 'display:none');
