@@ -30,7 +30,7 @@ let prevBtnIndex = -1;
 
 function LoadProject(button, btnIndex)
 {
-    if(button.getAttribute("class") == "proj-button-active") /* case where you select the active button */
+    if(button.getAttribute("class") == "proj-button-active") /// case where you select the active button
     {
         var x = document.getElementsByClassName("proj-button-active");
 
@@ -41,14 +41,14 @@ function LoadProject(button, btnIndex)
     else 
     {
         var x = document.getElementsByClassName("proj-button-active");
-        if(x.length != 0) /* case where another project is currently active and being displayed. */
+        if(x.length != 0) /// case where another project is currently active and being displayed.
         {
             x[0].className = "proj-button";
             projTextArea.innerHTML = "";
             projTextArea.style.opacity = 0;
         }
 
-        /* Set this button as the active display */
+        /// Set this button as the active display
         projTextArea.innerHTML = ProjectText[btnIndex];
         projTextArea.style.opacity = 1;
         document.getElementById(button.getAttribute("id")).className = "proj-button-active";
