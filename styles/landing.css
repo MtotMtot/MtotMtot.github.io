@@ -396,14 +396,6 @@ letter.initial
     text-align: center;
 }
 
-#toggle1 {
-    display: none;
-}
-
-#toggle1:checked ~ .menu1 {
-    height: 340px;
-}
-
 /****************** Skills section *********************/
 
 #skill-chart-title
