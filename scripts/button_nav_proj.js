@@ -26,41 +26,41 @@ for(let i = 0; i < ProjectNames.length; ++i)
 }
 
 let bLock = false;
-let prevBtnIndex = -1;
+let prevBtnIndex = -1; 
 
-function LoadProject(button, btnIndex) {
-    var currently = document.getElementById('info').getAttribute('style');
-    if (currently != 'display:none')
-        document.getElementById('info').setAttribute('style', 'display:none');
-    else
-        document.getElementById('info').setAttribute('style', 'display:block');
-}
-
-/*
 function LoadProject(button, btnIndex)
 {
-    if(button.getAttribute("class") == "proj-button-active") /// case where you select the active button
+    if(button.getAttribute("class") == "proj-button-active") /* case where you select the active button */
     {
         var x = document.getElementsByClassName("proj-button-active");
 
-        x[0].className = "proj-button";
+        /*x[0].className = "proj-button";
         projTextArea.innerHTML = "";
-        projTextArea.style.opacity = 0;
+        projTextArea.style.opacity = 0;*/
+
+        const ele = document.getElementById('proj-button-section');
+        const newDiv = document.createElement('div');
+        newDiv.innerHTML = ProjectText[btnIndex];
+        ele.appendChild(newDiv);
     }
     else 
     {
         var x = document.getElementsByClassName("proj-button-active");
-        if(x.length != 0) /// case where another project is currently active and being displayed.
+        if(x.length != 0) /* case where another project is currently active and being displayed. */
         {
             x[0].className = "proj-button";
             projTextArea.innerHTML = "";
             projTextArea.style.opacity = 0;
         }
 
-        /// Set this button as the active display 
-        projTextArea.innerHTML = ProjectText[btnIndex];
+        /* Set this button as the active display */
+        /*projTextArea.innerHTML = ProjectText[btnIndex];
         projTextArea.style.opacity = 1;
-        document.getElementById(button.getAttribute("id")).className = "proj-button-active";
+        document.getElementById(button.getAttribute("id")).className = "proj-button-active";*/
+
+        const ele = document.getElementById('proj-button-section');
+        const newDiv = document.createElement('div');
+        newDiv.innerHTML = ProjectText[btnIndex];
+        ele.appendChild(newDiv);
     }
 }
-*/
