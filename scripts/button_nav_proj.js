@@ -34,14 +34,9 @@ function LoadProject(button, btnIndex)
     {
         var x = document.getElementsByClassName("proj-button-active");
 
-        /*x[0].className = "proj-button";
+        x[0].className = "proj-button";
         projTextArea.innerHTML = "";
-        projTextArea.style.opacity = 0;*/
-
-        const ele = document.getElementById('proj-button-section');
-        const newDiv = document.createElement('div');
-        newDiv.innerHTML = ProjectText[btnIndex];
-        ele.appendChild(newDiv);
+        projTextArea.style.opacity = 0;
     }
     else 
     {
@@ -54,13 +49,8 @@ function LoadProject(button, btnIndex)
         }
 
         /* Set this button as the active display */
-        /*projTextArea.innerHTML = ProjectText[btnIndex];
+        projTextArea.innerHTML = ProjectText[btnIndex];
         projTextArea.style.opacity = 1;
-        document.getElementById(button.getAttribute("id")).className = "proj-button-active";*/
-
-        const ele = document.getElementById('proj-button-section');
-        const newDiv = document.createElement('div');
-        newDiv.innerHTML = ProjectText[btnIndex];
-        ele.appendChild(newDiv);
+        document.getElementById(button.getAttribute("id")).className = "proj-button-active";
     }
 }
