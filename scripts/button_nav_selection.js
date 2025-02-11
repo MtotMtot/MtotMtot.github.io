@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function()
 
     if (textArea.style.opacity == 0) {
         document.body.style.height = "200vh";
+        document.body.style.width = "80vw";
         fetch("./Data/pages/landing_extra.html")
             .then(r => r.text())  // Fetch and get the text content of the response
             .then(text => {  // Handle the text once it's fetched
