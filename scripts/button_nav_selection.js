@@ -51,7 +51,6 @@ function revealIncludeText(textArea, i)
 document.addEventListener('DOMContentLoaded', function()
 {
     let textArea = document.getElementById("data_selection_area");
-    let projText = document.getElementById("proj-button-section");
     let buttons = [];
     
     for (let i = 0; i < ContentNames.length; ++i) 
@@ -66,7 +65,6 @@ document.addEventListener('DOMContentLoaded', function()
             .then(text => {  // Handle the text once it's fetched
                 textArea.innerHTML = text;  // Set the inner HTML of the text area
                 textArea.style.opacity = 1;  // Make the text area visible
-                projText.style.width = "400px";
             })
             .catch(error => {
                 console.error("Error fetching data:", error);
