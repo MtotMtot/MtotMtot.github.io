@@ -4,7 +4,6 @@
 
 const ContentNames = 
 [
-    "projects",
     "career",
     "skills"
 ];
