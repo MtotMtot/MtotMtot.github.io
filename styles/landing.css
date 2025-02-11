@@ -204,7 +204,7 @@ letter.initial
     -webkit-box-pack: center;
             justify-content: center;
     text-align: center;
-    width: 90%;
+    width: 60%;
     /* border: 2px solid #f60e0e; */
   }
   
@@ -221,7 +221,7 @@ letter.initial
     text-align: center;
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 400px) {
     .button_container {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
