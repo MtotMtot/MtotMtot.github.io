@@ -60,12 +60,12 @@ document.addEventListener('DOMContentLoaded', function()
 
     if (textArea.style.opacity == 0) {
         document.body.style.height = "200vh";
-        document.body.style.width = "160vw";
         fetch("./Data/pages/landing_extra.html")
             .then(r => r.text())  // Fetch and get the text content of the response
             .then(text => {  // Handle the text once it's fetched
                 textArea.innerHTML = text;  // Set the inner HTML of the text area
                 textArea.style.opacity = 1;  // Make the text area visible
+                textArea.getElementById("proj-button-section").style.width = "400px";
             })
             .catch(error => {
                 console.error("Error fetching data:", error);
