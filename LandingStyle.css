@@ -164,3 +164,7 @@ img {
         opacity: 0;
     }
 }
+
+#tldr {
+    text-align: center;
+}
