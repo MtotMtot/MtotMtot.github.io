@@ -81,17 +81,16 @@
                 Stolen Timelines is a fast paced platformer, where you play as a thief from the future, stealing artefacts from the past in order to meet the gang quota.
                 <br>
                 <br>
-                Taking from a wide range of games like Lethal Company and Battle Block Theatre, we developed the game with the focus on being easy to pick up and fast paced gameplay.
+                I worked on creating a dynamic camera that would adapt to the player's movement and the terrain to provide a clear view of the environment without hindering the gameplay experience.
                 <br>
                 <br>
-                You will find yourself in Victorian London, locating and stealing all kinds of artefacts. All while dodging traps such as the Iron Maiden that traps and impales you with sharp spikes,
-                Brazen Bull rooms which will slowly cook you alive and deadly rats running about the rooms.
+                The other mecchanic i was responsible for was the rewind ability, allowing the player to avoid fatal traps. A visual effect was added to the player when the ability was used to clearly indicate the ability was active.
                 <br>
-                Time is not your friend, you only have two minutes to get in and extract before being left behind.
+                The ability would also influence the in-game time, rewinding it as the player used it allowing them to gain more time within the level.
                 <br>
                 <br>
                 A link to the itch.io page can be found above.
-
+                <br>
                 <img src="https://media.giphy.com/media/kpLyjDVvU9lTVN1M7u/giphy.gif" alt="camera movement as player quickly traverses multiple floors within the level">
                 <img src="https://media.giphy.com/media/bODP1dC9BPTkHa0rCU/giphy.gif" alt="rewind ability, allowing the player to avoid fatal traps">
             </div>
@@ -122,17 +121,20 @@
 
         <div id="exalted_body">
             <div class="exalted_text">
-                This project was completed during my 3rd year at Abertay during the Global Game Jam 2024. The theme being: Make Me Laugh.
+                This project was completed during the Global Game Jam 2024.
                 <br />
                 <br />
-                Bar Fight is a first-person gaming experience that combines mayhem with a touch of irreverent humour.
+                Responsible to the mechanics design and programming, the notable mechanics i worked on were AI and the ragdoll physics.
                 <br />
                 <br />
-                Immerse yourself in this wild, low-poly universe where you'll navigate through a rowdy bar setting, testing your skills in the art of the brawl.
+                The AI was created using a pathfinding algorithm and a state machine to allow the enemy to chase the player once they entered their vision cone.
                 <br />
                 <br />
+                Nearly all objects in the game were interactable, allowing the player to throw objects at the enemy to ragdoll them. The enemies would then be given an impulse force to knock their ragdoll back.
+                <br>
+                <br>
                 A link to the Jam page can be found above.
-
+                <br>
                 <img src="https://media.giphy.com/media/wiSZalR0oljWMzOT9X/giphy.gif" alt="AI path finding and chair throwing">
                 <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExejVvdGdoMHR6eDAzazVmMm5pM2g0cm9jdmpkbjhsZmdjemU4djZ1NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/D4OERlaHgods8f58L5/giphy.gif" alt="enemy ragdoll on hit">
             </div>
@@ -163,17 +165,22 @@
 
         <div id="tech_body">
             <div class="tech_text">
-                This project was completed during my 2nd year at Abertay.
-                <br>
+                This project was completed as coursework at Abertay.
                 <br>
                 Post-Poned is a light-hearted, 3D puzzle game where you play as Keith, the postman.
                 <br>
                 <br>
-                You must solve puzzles to keep the post office in order alongside the newly installed AI.
-                <br />
-                <br />
+                I worked on the level design, camera and the conveyor mechanic puzzle.
+                <br>
+                <br>
+                The camera mimicked a CCTV cameras, being able to rotate left and right from a fixed point. The camera speed and position was fine tuned to provide a clear view of the environment to not hinder the gameplay experience.
+                <br>
+                <br>
+                The conveyor belt puzzle was comprimised of a list of gameobjects that would spawn in sequence that had to be scanned by the player. Each object needed the player to press the right buttons in order to progress.
+                <br>
+                <br>
                 A link to the repository can be found above.
-
+                <br>
                 <img src="https://media.giphy.com/media/s8CGQELFBLa2CKLanV/giphy.gif" alt="camera tutorial clip from final build">
                 <img src="https://media.giphy.com/media/ejNGPlHZHvSzaE3VfI/giphy.gif" alt="conveyor belt demo video">
             </div>
@@ -206,16 +213,18 @@
         <div id="mapex_body">
             <div class="mapex_text">
                 This project explored how games handle online play, focusing on which network architecture is best for small-scale games and development and which API best fits the network type.
-                <br />
-                <br />
-                The outcome consits of a basic, playable prototype in Unity.
-                <br />
-                <br />
-                Within the game players can move, shoot and kill other players that have joined their server.
-                <br />
-                <br />
+                <br>
+                The outcome consits of a basic, playable prototype allowing players to host or join a server.
+                <br>
+                <br>
+                Players join a host's server by entering the host's join code. The host communicates with the clients through a relay, bypassing the need to port forward.
+                <br>
+                <br>
+                Within the game the players can move and shoot at other players, with the host synchronising player and projectile positions for all clients through the use of client and server RPCs.
+                <br>
+                <br>
                 A link to the repository can be found above.
-
+                <br>
                 <img src="https://media.giphy.com/media/JjxEHc0HWAtRlWJbkw/giphy.gif" alt="joining a host and demonstrating combat">
                 <img src="https://media.giphy.com/media/cRDok5RnnSnWgZncx2/giphy.gif" alt="join code generated only for host on game start">
                 <img src="https://media.giphy.com/media/u8wuaDz5RRnsT0XlbF/giphy.gif" alt="combat from host perspective">
