@@ -1,3 +1,40 @@
+<style>
+    .skills-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 15px;
+        margin: 20px 0;
+    }
+    
+    .skills-table td {
+        padding: 10px;
+        background-color: #f5f5f5;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease;
+    }
+    
+    .skills-table td:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+    
+    .skills-table .metric {
+        background: linear-gradient(90deg, #4CAF50, #8BC34A);
+        padding: 8px 15px;
+        border-radius: 4px;
+        color: white;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .skills-table .metric-value {
+        font-weight: bold;
+    }
+</style>
+
 <hr>
 <div id="pt">Below you will find my self-evaluated skill levels.</div>
 <hr>
@@ -7,29 +44,29 @@
 <table class="skills-table">
     <tr>
         <td>
-            <div class="metric" style="width:80%">C# <span class="metric-value">80</span></div>
+            <div class="metric">C#</div>
         </td>
         <td>
-            <div class="metric" style="width:70%">C++ <span class="metric-value">70</span></div>
+            <div class="metric">C++</div>
         </td>
         <td>
-            <div class="metric" style="width:65%">Python <span class="metric-value">65</span></div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div class="metric" style="width:50%">HTML <span class="metric-value">50</span></div>
-        </td>
-        <td>
-            <div class="metric" style="width:50%">CSS <span class="metric-value">50</span></div>
-        </td>
-        <td>
-            <div class="metric" style="width:45%">Shell <span class="metric-value">45</span></div>
+            <div class="metric">Python</div>
         </td>
     </tr>
     <tr>
         <td>
-            <div class="metric" style="width:40%">Javascript <span class="metric-value">40</span></div>
+            <div class="metric">HTML</div>
+        </td>
+        <td>
+            <div class="metric">CSS</div>
+        </td>
+        <td>
+            <div class="metric">Shell</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="metric">Javascript</div>
         </td>
         <td></td>
         <td></td>
