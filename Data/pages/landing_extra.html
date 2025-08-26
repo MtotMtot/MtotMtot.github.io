@@ -48,7 +48,7 @@
                 <div style="display: flex; gap: 20px;">
                     <div style="flex: 2;">
                         This project explores the feasibility of using a decentralized topology API in multiplayer game development. 
-                        As part of my honours project, I developed both an original API and a dissertation. 
+                        As part of my honours project, I developed both an original .NET API and dissertation. 
                         <br>
                         <br>
                         The dissertation analyzes existing APIs available to developers, identifying key features that informed the development of my own API.
@@ -102,15 +102,19 @@
                 Stolen Timelines is a fast-paced platformer, where you play as a thief from the future, stealing artefacts from the past in order to meet the gang quota.
                 <br>
                 <br>
-                I created a dynamic camera that would adapt to the player's movement and the terrain to offer a clear view of the environment without hindering the gameplay experience.
+                I was responsible for critical elements such as the gameplay camera: a dynamic camera that would adapt to the player's movement and the terrain to offer a clear view of the environment without hindering the gameplay experience by utilising:
+                directional biases; interpolation; camera bounds along with fine tuning from testing and feedback.
                 <br>
                 <br>
-                The other mechanic I developed was the rewind ability, allowing the player to avoid fatal traps. A visual effect was added to the player when the ability was used to clearly indicate the ability was active.
+                I also designed gameplay mechanics, a notable one being the rewind ability, allowing the player to avoid fatal traps or save time while backtracking. On ability activation the player would place down a beacon to save their coordinates and current time remaining,
+                if the player then activated the ability again, they would return to that position and in-game time.
                 <br>
-                The ability would also influence the in-game time, rewinding it as the player used it allowing them to gain more time within the level.
+                I was primarily responsible for asset implantation within the game, taking character sprite sheets or .wav audio files and implementing them in engine.
+                I would then work with respective artists or audio designers to tweak and fine tune their assets.
                 <br>
                 <br>
                 A link to the itch.io page can be found above.
+                <br>
                 <br>
 
                 <div class="img-container" style="display: flex; justify-content: center; gap: 10px;">
@@ -152,13 +156,14 @@
                 Responsible to the mechanics design and programming, the notable mechanics I worked on were AI and the ragdoll physics.
                 <br />
                 <br />
-                The AI was created using a pathfinding algorithm and a state machine to allow the enemy to chase the player once they entered their vision cone.
+                The AI was created using a pathfinding algorithm and a state machine to allow the enemy to chase the player once they entered their vision cone, utilising a Navmesh to allow the enemy to move around the level whilst avoiding obstacels.
                 <br />
                 <br />
-                Nearly all objects in the game were interactable, allowing the player to throw objects at the enemy to ragdoll them. The enemies would then be given an impulse force to knock their ragdoll back.
+                Nearly all objects in the game were interactable, allowing the player to throw objects at the enemy to ragdoll them. The enemies would then be given an impulse force to knock their ragdoll back. This helped in creating responsive gameplay and utilises ragdoll physics to create a humorous and engaging experience.
                 <br>
                 <br>
                 A link to the Jam page can be found above.
+                <br>
                 <br>
 
                 <div class="img-container" style="display: flex; justify-content: center; gap: 10px;">
@@ -193,21 +198,22 @@
 
         <div id="tech_body">
             <div class="tech_text">
-                This project was completed during my 3rd year at Abertay.
-                <br>
                 Post-Poned is a light-hearted, 3D puzzle game where you play as Keith, the postman.
                 <br>
                 <br>
-                I worked on the level design, camera and the conveyor mechanic puzzle.
+                I was responsible for the level design, gameplay camera and the puzzle mechanics.
                 <br>
                 <br>
-                The camera mimicked a CCTV camera, being able to rotate left and right from a fixed point. The camera speed and position were fine tuned to provide a clear view of the environment to not hinder the gameplay experience.
+                The camera was a unique as it was from a fixed perspective with a twist: multiple cameras were available to the player, and they could switch between them willingly.
+                Every camera could be moved independently to reveal points of interest to the player encouraging the player to explore with the camera as well as the player character.
                 <br>
                 <br>
-                The conveyor belt puzzle was compromised of a list of gameObjects that would spawn in sequence that had to be scanned by the player. Each object needed the player to press the right buttons in order to progress.
+                Each puzzle was unique, allowing the player to exercise their problem-solving skills throughout the game. The conveyor puzzle was compromised of parcels that would spawn in sequence, each needing to be scanned by the player.
+                Each object needed the player to press buttons corresponding to the shape, size and contents of the object which were hinted at by the parcel models and the voice lines explaining the contents.
                 <br>
                 <br>
                 A link to the repository can be found above.
+                <br>
                 <br>
 
                 <div class="img-container" style="display: flex; justify-content: center; gap: 10px;">
