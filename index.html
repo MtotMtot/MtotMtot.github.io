@@ -70,4 +70,19 @@
         <script src="scripts/button_nav_proj.js"></script>
 
     </div>
+
+    <!-- Chatbot widget embed code -->
+    <script src="http://localhost:3000/chatbot-widget.js"></script>
+    <script>
+        // Initialize the chatbot widget
+        new WebsiteChatbotWidget({
+            websiteUrl: window.location.origin,
+            position: 'left',
+            title: 'Test Assistant',
+            welcomeMessage: 'Hello! I\'m a test chatbot. Ask me anything about this test page!',
+            primaryColor: '#28a745',
+            textColor: '#ffffff',
+            backendUrl: 'http://localhost:3000/api/chatbot'
+        });
+    </script>
 </html>
