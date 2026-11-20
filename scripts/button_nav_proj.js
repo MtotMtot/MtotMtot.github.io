@@ -54,6 +54,16 @@ function LoadProject5() {
     }
 }
 
+function LoadProject6() {
+    var currently = document.getElementById('info6').getAttribute('style');
+    if (currently != 'display:none') {
+        document.getElementById('info6').setAttribute('style', 'display:none');
+    }
+    else {
+        document.getElementById('info6').setAttribute('style', 'display:block');
+    }
+}
+
 /*      /// OLD PROJECT NAV CODE.
 const ProjectNames = 
 [
