@@ -272,6 +272,8 @@ letter.initial
     color: #E1332D;
   }
 
+  a { color: inherit; } 
+
 .btn {
     color: #fff;
     cursor: pointer;
